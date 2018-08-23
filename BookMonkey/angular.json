@@ -27,7 +27,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "node_modules/semantic-ui-css/semantic.css"
             ],
             "scripts": []
           },
@@ -48,6 +48,12 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true
+            }
+          },
+          "defaults": {
+            "styleExt": "css",
+            "component": {
+              "inlineStyle": true
             }
           }
         },
