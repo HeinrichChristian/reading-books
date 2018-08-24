@@ -49,12 +49,6 @@
               "vendorChunk": false,
               "buildOptimizer": true
             }
-          },
-          "defaults": {
-            "styleExt": "css",
-            "component": {
-              "inlineStyle": true
-            }
           }
         },
         "serve": {

@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'BookMonkey';
+  number = 1;
+  clickMe() {
+    this.number += 1;
+  }
+  reduce() {
+    this.number = 0;
+  }
+
 }
