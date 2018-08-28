@@ -11,4 +11,8 @@
 <button (click)="clickMe()">increment it</button><p>
 <button (click)="reduce()">reduce</button>
 This is amazing!
+<div [ngSwitch]="number">
+  <span *ngSwitchCase="5">toll eine 5</span>
+  <span *ngSwitchCase="10">toll eine 10</span>
+</div>
 
