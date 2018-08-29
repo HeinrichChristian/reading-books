@@ -1,5 +1,5 @@
-import { Thumbnail } from './thumbnail';
-export { Thumbnail } from './thumbnail';
+import { Thumbnail1 } from './thumbnail';
+export { Thumbnail1 } from './thumbnail';
 
 export class Book {
     constructor(
@@ -9,7 +9,7 @@ export class Book {
         public published: Date,
         public subtitle?: string,
         public rating?: number,
-        public thumbnails?: Thumbnail[],
+        public thumbnails?: Thumbnail1[],
         public descriptions?: string
     ) {}
 }
