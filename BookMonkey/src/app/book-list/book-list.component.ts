@@ -11,9 +11,6 @@ import { Thumbnail1 } from '../shared/thumbnail';
 export class BookListComponent implements OnInit {
   books: Book[];
   ngOnInit() {
-    const thumb1 = new Thumbnail1 ('https://img.zeit.de/kultur/2018-03/bild-1/square__220x220__desktop', 'nett');
-    const thumbnails: Array<Thumbnail1> = [thumb1];
-    // new Thumbnail ('https://img.zeit.de/kultur/2018-03/bild-1/square__220x220__desktop', 'nett')];
     this.books = [
       new Book(
         '8739989890',
@@ -22,7 +19,7 @@ export class BookListComponent implements OnInit {
         new Date(2018, 2, 4),
         'bdkfadskjfsk wejwe f ejoewf  erhferng geroigne gerog',
         4,
-        thumbnails, // new Thumbnail ('https://img.zeit.de/kultur/2018-03/bild-1/square__220x220__desktop', 'nett')],
+        [new Thumbnail1 ('http://www.holzrad-pinneberg.de/raeder/r-bilder/delite-blue-g.jpg', 'nett')],
         'passt perfekt'
       ),
       new Book(
@@ -32,7 +29,7 @@ export class BookListComponent implements OnInit {
         new Date(2018, 2, 4),
         'bdkfadskjfsk wejwe f ejoewf  erhferng geroigne gerog',
         4,
-        [new Thumbnail1 ('http://chismosocantu.com/wp-content/uploads/2018/03/Charlotte-McKinney-una-gran-y-enorme-modelo.jpg', 'nett')],
+        [new Thumbnail1 ('https://followmestore.de/media/image/eb/cd/9d/riese-mueller-delite-dual-battery-grau_600x600.jpg', 'nett')],
         'passt perfekt'
       ),
       new Book(
@@ -42,7 +39,7 @@ export class BookListComponent implements OnInit {
         new Date(2018, 2, 4),
         'bdkfadskjfsk wejwe f ejoewf  erhferng geroigne gerog',
         4,
-        [new Thumbnail1 ('https://www.usmagazine.com/wp-content/uploads/1329233840_kate-upton-swimwear01-lg.jpg', 'nett')],
+        [new Thumbnail1 ('https://www.greenfinder.de/typo3temp/_processed_/csm_3f40177c22313a903ea93c0647bcee4b_742aa1b656.jpg', 'nett')],
         'passt perfekt'
       )
     ];
