@@ -15,7 +15,4 @@ export class BookListItemComponent implements OnInit {
   ngOnInit() {
   }
 
-  myKeyHandler(e) {
-    console.log(e);
-  }
 }

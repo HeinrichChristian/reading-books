@@ -1,22 +1,30 @@
+import { Book } from './shared/book';
 import { Component } from '@angular/core';
+
+
 
 @Component({
   selector: 'bm-root',
   template:
-  `<bm-book-list *ngIf="listOn"></bm-book-list>
-  <bm-book-details *ngIf="detailsOn"></bm-book-details>`,
+  `<bm-book-list *ngIf="listOn" (showDetailsEvent)="showDetails($event)"></bm-book-list>
+  <bm-book-details *ngIf="detailsOn" (showListEvent)="showList()" [book]="book"></bm-book-details>`,
   styles: []
 })
 export class AppComponent {
   listOn = true;
   detailsOn = false;
   title = 'BookMonkey';
-  number = 1;
-  clickMe() {
-    this.number += 1;
-  }
-  reduce() {
-    this.number = 0;
+
+  book: Book;
+
+  showList() {
+    this.listOn = true;
+    this.detailsOn = false;
   }
 
+  showDetails(book: Book) {
+    this.book = book;
+    this.listOn = false;
+    this.detailsOn = true;
+  }
 }

@@ -3,14 +3,14 @@
     <img class="ui large image" [src]="book.thumbnails[0].url">
   </div>
   <div class="twelve wide column">
-    <h1 class="ui header">{{ book.title }}</book></h1>
+    <h1 class="ui header">{{ book.title }}</h1>
     <h3 class="ui header">{{ book.subtitle }}</h3>
     <div class="divider"></div>
     <div class="ui grid">
       <div class="four wide column">
         <h4 class="ui header">Autoren</h4>
         <span *ngFor="let author of book.authors; last as l">
-          {{ span }}<span *ngIf"!l">, </span>
+          {{ span }}<span *ngIf="!l">, </span>
         </span>
       </div>
       <div class="four wide column">
@@ -37,3 +37,5 @@
     </div>
   </div>
 </div>
+
+<button (click)="showBookList()" class="ui red button">Zurück zur Liste</button>
